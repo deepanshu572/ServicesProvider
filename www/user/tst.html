@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade Professions Grid</title>
+    <style>  
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: minmax(0px, auto);
+            gap: 5px;
+            row-gap: 6px;
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .card {
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            width: 81%;
+        }
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+        }
+
+        /* Card styles */
+        .electrician {
+            background-color: #FFF8D1;
+            grid-column: 1 / 3;
+            grid-row: 1 / 1;
+            height: 80px;
+        }
+
+        .electrician .icon {
+            background-color: #E6C700;
+        }
+
+        .carpenter {
+            background-color: #E9DDD3;
+            grid-column: 3 / 4;
+            height: 40px;
+        }
+
+        .carpenter .icon {
+            background-color: #7E5B3F;
+        }
+
+        .plumber {
+            background-color: #D6E4F9;
+            grid-column: 1 / 3;
+            grid-row: 2 / 3;
+        }
+
+        .plumber .icon {
+            background-color: #3D78DD;
+        }
+
+        .gardner {
+            background-color: #D8F5E3;
+            grid-column: 3 / 4;
+            grid-row: 2 / 4;
+            height: 122px;
+            position: absolute;
+            top: -41%;
+        }
+
+        .gardner .icon {
+            background-color: #4DC26B;
+        }
+
+        .painter {
+            background-color: #FADCDC;
+            grid-column: 1 / 3;
+            grid-row: 3 / 9;
+            height: 80px;
+        }
+
+        .painter .icon {
+            background-color: #E64747;
+        }
+
+        .mechanic {
+            background-color: #D6DCE9;
+            grid-column: 3 / 3;
+            grid-row: 9 / 5;
+        }
+
+        .mechanic .icon {
+            background-color: #1A2E66;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <!-- Electrician Card -->
+        <div class="card electrician">
+            <div class="icon">
+                <!-- Icon would go here -->
+            </div>
+            <span>Electrician</span>
+        </div>
+
+        <!-- Carpenter Card -->
+        <div class="card carpenter">
+            <div class="icon">
+                <!-- Icon would go here -->
+            </div>
+            <span>Carpenter</span>
+        </div>
+
+        <!-- Plumber Card -->
+        <div class="card plumber">
+            <div class="icon">
+                <!-- Icon would go here -->
+            </div>
+            <span>Plumber</span>
+        </div>
+
+        <!-- Gardner Card -->
+        <div class="card gardner">
+            <div class="icon">
+                <!-- Icon would go here -->
+            </div>
+            <span>Gardner</span>
+        </div>
+
+        <!-- Painter Card -->
+        <div class="card painter">
+            <div class="icon">
+                <!-- Icon would go here -->
+            </div>
+            <span>Painter</span>
+        </div>
+
+        <!-- Mechanic Card -->
+        <div class="card mechanic">
+            <div class="icon">
+                <!-- Icon would go here -->
+            </div>
+            <span>Mechanic</span>
+        </div>
+    </div>
+    <div class="grid-container" style="margin-top: 10px;">
+        <!-- Electrician Card -->
+        <div class="card electrician">
+            <div class="icon">
+                <!-- Icon would go here -->
+            </div>
+            <span>Electrician</span>
+        </div>
+
+        <!-- Carpenter Card -->
+        <div class="card carpenter">
+            <div class="icon">
+                <!-- Icon would go here -->
+            </div>
+            <span>Carpenter</span>
+        </div>
+
+        <!-- Plumber Card -->
+        <div class="card plumber">
+            <div class="icon">
+                <!-- Icon would go here -->
+            </div>
+            <span>Plumber</span>
+        </div>
+
+        <!-- Gardner Card -->
+        <div class="card gardner">
+            <div class="icon">
+                <!-- Icon would go here -->
+            </div>
+            <span>Gardner</span>
+        </div>
+
+        <!-- Painter Card -->
+        <div class="card painter">
+            <div class="icon">
+                <!-- Icon would go here -->
+            </div>
+            <span>Painter</span>
+        </div>
+
+        <!-- Mechanic Card -->
+        <div class="card mechanic">
+            <div class="icon">
+                <!-- Icon would go here -->
+            </div>
+            <span>Mechanic</span>
+        </div>
+    </div>
+    <div class="grid-container" style="margin-top: 10px;">
+        <!-- Electrician Card -->
+        <div class="card electrician">
+            <div class="icon">
+                <!-- Icon would go here -->
+            </div>
+            <span>Electrician</span>
+        </div>
+
+        <!-- Carpenter Card -->
+        <div class="card carpenter">
+            <div class="icon">
+                <!-- Icon would go here -->
+            </div>
+            <span>Carpenter</span>
+        </div>
+
+        <!-- Plumber Card -->
+        <div class="card plumber">
+            <div class="icon">
+                <!-- Icon would go here -->
+            </div>
+            <span>Plumber</span>
+        </div>
+
+        <!-- Gardner Card -->
+        <div class="card gardner">
+            <div class="icon">
+                <!-- Icon would go here -->
+            </div>
+            <span>Gardner</span>
+        </div>
+
+        <!-- Painter Card -->
+        <div class="card painter">
+            <div class="icon">
+                <!-- Icon would go here -->
+            </div>
+            <span>Painter</span>
+        </div>
+
+        <!-- Mechanic Card -->
+        <div class="card mechanic">
+            <div class="icon">
+                <!-- Icon would go here -->
+            </div>
+            <span>Mechanic</span>
+        </div>
+    </div>
+    <div class="grid-container" style="margin-top: 10px;">
+        <!-- Electrician Card -->
+        <div class="card electrician">
+            <div class="icon">
+                <!-- Icon would go here -->
+            </div>
+            <span>Electrician</span>
+        </div>
+
+        <!-- Carpenter Card -->
+        <div class="card carpenter">
+            <div class="icon">
+                <!-- Icon would go here -->
+            </div>
+            <span>Carpenter</span>
+        </div>
+
+        <!-- Plumber Card -->
+        <div class="card plumber">
+            <div class="icon">
+                <!-- Icon would go here -->
+            </div>
+            <span>Plumber</span>
+        </div>
+
+        <!-- Gardner Card -->
+        <div class="card gardner">
+            <div class="icon">
+                <!-- Icon would go here -->
+            </div>
+            <span>Gardner</span>
+        </div>
+
+        <!-- Painter Card -->
+        <div class="card painter">
+            <div class="icon">
+                <!-- Icon would go here -->
+            </div>
+            <span>Painter</span>
+        </div>
+
+        <!-- Mechanic Card -->
+        <div class="card mechanic">
+            <div class="icon">
+                <!-- Icon would go here -->
+            </div>
+            <span>Mechanic</span>
+        </div>
+    </div>
+</body>
+</html>
