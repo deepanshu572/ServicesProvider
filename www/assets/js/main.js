@@ -490,7 +490,7 @@ function allSearchData() {
   var searchRes = "";
   CategoryData.map((item) => {
     searchRes += `
-    <a href="#" class="search_result_data">
+    <a href="productDetail.html" class="search_result_data">
               <div class="search_img">
                <img src="${item.img}" alt="">
               </div>
