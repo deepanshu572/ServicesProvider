@@ -35,16 +35,16 @@
         </div>
         <div style="width: 25px"></div>
       </div>
-      <form class="checkout_form_data">
+      <form class="checkout_form_data"  id="bookingForm"  >
         <div class="checkout_form_inp">
           <div class="date_inp">
             <h3>From</h3>
-            <input type="date" id="check_in1" name="check_in" required />
+            <input type="date" id="check_in1" name="check_in"  />
             <label for="check_in1"><i class="bi bi-calendar4-event"></i></label>
           </div>
           <div class="date_inp">
             <h3>To</h3>
-            <input type="date" id="check_in2" name="check_in" required />
+            <input type="date" id="check_in2" name="check_in"  />
             <label for="check_in2"><i class="bi bi-calendar4-event"></i></label>
           </div>
         </div>
@@ -91,7 +91,7 @@
           </div>
         </div>
         <div class="checkout_input_btn">
-           <button>Book Now</button>
+           <button type="submit" onclick="booking()" >Book Now</button>
         </div>
       </form>
       <div class="footer">
@@ -127,5 +127,14 @@
 
     <script src="../assets/js/main.js"></script>
 
+    <script>
+      function booking() {
+      $("#bookingForm").submit(function (e) {
+        e.preventDefault();
+        alert();
+        location.href = "Thankyou.html";
+      });
+    }
+    </script>
   </body>
 </html>

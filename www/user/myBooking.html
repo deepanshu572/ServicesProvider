@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Setting</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Option 1: Include in HTML -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <style>
+      body {
+        background: #f7f7f7 !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="checkout_navbar booking_navbar">
+        <div class="check_nav">
+          <a href="setting.html">
+            <i class="bi bi-arrow-left-short"></i>
+          </a>
+        </div>
+        <div class="check_nav_txt">
+          <h3>My Bookings</h3>
+        </div>
+        <div style="width: 25px"></div>
+      </div>
+      <div class="my_booking_data" id="bookingHistory">
+        <div class="my_booking_box">
+            <div class="my_booking_img">
+              <img src="../assets/img/user.svg" alt="Image" />
+            </div>
+            <div class="my_booking_info">
+              <h4>Rajesh Sharma</h4>
+              <b>Painter</b>
+              <br>
+            <span>  Age:- <p>25</p></span>
+            <span>  Booking ID:-<p> #110</p></span>
+            <div class="date_time">
+            <span> Date:- <p> 28/01/2024</p></span>
+            <span> Time:- <p> 10:00 AM</p></span>
+        </div>
+        <span>
+            Status:-
+            <p> Incompleted</p>
+        </span>
+
+
+            </div>
+            <div class="my_booking_btn">
+              <button type="button">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <a href="home.html" class="footer_data">
+          <img src="../assets/img/home.svg" alt="" />
+          <p>Home</p>
+          
+        </a>
+        <a href="search.html" class="footer_data">
+          <img src="../assets/img/search.svg" alt="" />
+          <p>Search</p>
+        
+        </a>
+        <a href="myBooking.html" class="footer_data">
+          <img src="../assets/img/booking.svg" alt="" />
+          <p>My Booking</p>
+          <div class="dot"></div>
+        </a>
+        <a href="setting.html" class="footer_data">
+          <img src="../assets/img/profile.svg" alt="" />
+          <p>Profile</p>
+        </a>
+      </div>
+   
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../assets/js/main.js"></script>
+
+
+    <script>
+
+         var BookingHistoryHolder = "";
+       const BookingHistoryData = [
+         {
+             id: 1,
+             name: 'Rajesh Sharma',
+             role: 'Painter',
+             age: 25,
+             bookingId: '#110',
+             date: '28/01/2024',
+             time: '10:00 AM',
+             status: 'Incompleted',
+             image: '../assets/img/user.svg'
+         },
+         {
+             id: 2,
+             name: 'Ramesh Kumar',
+             role: 'Artist',
+             age: 30,
+             bookingId: '#111',
+             date: '29/01/2024',
+             time: '11:00 AM',
+             status: 'Completed',
+             image: '../assets/img/user.svg'
+         },
+
+         {
+             id: 3,
+             name: 'Anil Kumar',
+             role: 'Photographer',
+             age: 28,
+             bookingId: '#112',
+             date: '30/01/2024',
+             time: '12:00 PM',
+             status: 'Cancelled',
+             image: '../assets/img/user.svg'
+         },
+         {
+             id: 4,
+             name: 'Ravi Kishore',
+             role: 'Designer',
+             age: 35,
+             bookingId: '#113',
+             date: '31/01/2024',
+             time: '01:00 PM',
+             status: 'Completed',
+             image: '../assets/img/user.svg'
+         },
+
+         {
+             id: 5,
+             name: 'Suresh Kumar',
+             role: 'Architect',
+             age: 32,
+             bookingId: '#114',
+             date: '01/02/2024',
+             time: '02:00 PM',
+             status: 'In Progress',
+             image: '../assets/img/user.svg'
+         },
+
+         {
+             id: 6,
+             name: 'Mahesh Kumar',
+             role: 'Engineer',
+             age: 37,
+             bookingId: '#115',
+             date: '02/02/2024',
+             time: '03:00 PM',
+             status: 'Completed',
+             image: '../assets/img/user.svg'
+         },
+
+        
+       ];
+
+       BookingHistoryData.map((item)=>{
+        BookingHistoryHolder+=`
+          <div class="my_booking_box">
+            <div class="my_booking_img">
+              <img src="${item.image}" alt="Image" />
+            </div>
+            <div class="my_booking_info">
+              <h4>${item.name}</h4>
+              <b>${item.role}</b>
+              <br>
+            <span>  Age:- <p>${item.age}</p></span>
+            <span>  Booking ID:-<p> ${item.bookingId}</p></span>
+            <div class="date_time">
+            <span> Date:- <p> ${item.date}</p></span>
+            <span> Time:- <p> ${item.time}</p></span>
+        </div>
+        <span>
+            Status:-
+            <p> ${item.status}</p>
+        </span>
+
+            </div>
+            <div class="my_booking_btn">
+              <button type="button">
+                View Details
+              </button>
+            </div>
+          </div>
+        `
+
+       });
+       $('#bookingHistory').html(BookingHistoryHolder);
+
+
+    </script>
+  </body>
+</html>

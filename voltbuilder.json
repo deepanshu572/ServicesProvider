@@ -1,0 +1,9 @@
+{
+  "androidAlias": "service_provider",
+  "androidAliasPassword": "alto800",
+  "androidKeystore": "service_provider.keystore",
+  "androidKeystorePassword": "alto800",
+  "platform": "android",
+  "release": "release",
+  "androidPackageType": "apk"
+}

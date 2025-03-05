@@ -67,7 +67,7 @@ function SignupSystem() {
     const mobile = formdata.get("mobile");
     const password = formdata.get("password");
     if ((name === "", email === "", mobile === "", password === "")) {
-      // alert("All fields are required");
+      alert("All fields are required");
       return false;
     }
     if (mobile === mobileDB) {
@@ -484,4 +484,49 @@ $("#bookingData").submit(async function (e) {
     location.href = "checkout.html";
   });
   console.log(selectedDays);
+});
+
+function allSearchData() {
+  var searchRes = "";
+  CategoryData.map((item) => {
+    searchRes += `
+    <a href="#" class="search_result_data">
+              <div class="search_img">
+               <img src="${item.img}" alt="">
+              </div>
+               <p>${item.title}</p>
+          </a>
+  `;
+  });
+  $("#searchResult").html(searchRes);
+}
+
+$("#search").on("input", function () {
+  console.log($(this).val());
+
+  let result = "";
+  const inp = $(this).val().toLowerCase();
+  const res = CategoryData.filter((item) =>
+    item.title.toLowerCase().includes(inp)
+  );
+  console.log(res);
+
+  if (res.length != 0) {
+    res.map((item) => {
+      result += `
+          <a href="#" class="search_result_data">
+                      <div class="search_img">
+                      <img src="${item.img}" alt="">
+                      </div>
+                      <p>${item.title}</p>
+                  </a>
+          `;
+    });
+    $("#searchResult").html(result);
+  } else {
+    $("#searchResult").html("<p class='text-center'>No Results Found</p>");
+  }
+  if (!inp) {
+    allSearchData();
+  }
 });

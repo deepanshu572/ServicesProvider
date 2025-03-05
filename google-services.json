@@ -1,0 +1,162 @@
+{
+  "project_info": {
+    "project_number": "396128116104",
+    "project_id": "universal-fcm-6",
+    "storage_bucket": "universal-fcm-6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396128116104:android:274ec8e4e722d67791ee3d",
+        "android_client_info": {
+          "package_name": "com.Asan_zindagi.Asan_zindagi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCch7sPvdTNdjIm5Mb1eCNJx4funrD6d2w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396128116104:android:7d6c4a0469904be091ee3d",
+        "android_client_info": {
+          "package_name": "com.Deepak_Grocery.Deepak_Grocery"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCch7sPvdTNdjIm5Mb1eCNJx4funrD6d2w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396128116104:android:12ceb2b19c18281991ee3d",
+        "android_client_info": {
+          "package_name": "com.GV_Mart.GV_Mart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCch7sPvdTNdjIm5Mb1eCNJx4funrD6d2w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396128116104:android:97d5c5894c04a82091ee3d",
+        "android_client_info": {
+          "package_name": "com.Kamna_GS.Kamna_GS"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCch7sPvdTNdjIm5Mb1eCNJx4funrD6d2w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396128116104:android:685039e558f2546991ee3d",
+        "android_client_info": {
+          "package_name": "com.Paarvati_Mart.Paarvati_Mart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCch7sPvdTNdjIm5Mb1eCNJx4funrD6d2w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396128116104:android:74ed040f3146688c91ee3d",
+        "android_client_info": {
+          "package_name": "com.Shri_Balaji_Store.Shri_Balaji_Store"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCch7sPvdTNdjIm5Mb1eCNJx4funrD6d2w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396128116104:android:f8317cebd5b1630591ee3d",
+        "android_client_info": {
+          "package_name": "com.Yoca_Online_Shop.Yoca_Online_Shop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCch7sPvdTNdjIm5Mb1eCNJx4funrD6d2w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396128116104:android:7f59b9a6e48c3d8691ee3d",
+        "android_client_info": {
+          "package_name": "com.service_provider.service_provider"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCch7sPvdTNdjIm5Mb1eCNJx4funrD6d2w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
